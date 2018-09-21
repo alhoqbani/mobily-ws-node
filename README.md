@@ -10,13 +10,38 @@ npm install mobily-ws --save
 ### Javascript
 ```javascript
 const mobilyWs = require('mobily-ws');
-const client = mobilyWs('username', 'password');
+
+const client = mobilyWs('YOUR API KEY', 'SENDER NAME');
+
+// Extra options to send to the api.
+const options = {
+    dateSend: '01/01/2020',
+    timeSend: '15:30:00',
+};
+
+client.sendSMS('Thank you for your business', ['966511111111', '966522222222'], options)
+    .then(function (response) {
+        console.log(response)
+    });
+
 ```
 
-### TypeScript
+### TypeScript/ES6
 ```typescript
-import { mobilyWs } from 'mobily-ws';
-const client = mobilyWs('username', 'password');
+import mobilyWs from 'mobily-ws';
+
+const client = mobilyWs('YOUR API KEY', 'SENDER NAME');
+
+// Extra options to send to the api.
+const options = {
+    dateSend: '01/01/2020',
+    timeSend: '15:30:00',
+};
+
+client.sendSMS('Thank you for your business', ['966511111111', '966522222222'], options)
+    .then((response) => {
+        console.log(response)
+    });
 
 ```
 

@@ -1,10 +1,10 @@
 export class MobilyWs {
 
-    private _username: string;
-    private _password: number;
+    private _apiKey: string;
+    private _sender: string;
 
-    constructor(username: string, password: number) {
-        this._username = username;
-        this._password = password;
+    constructor(apiKey: string, sender: string) {
+        this._apiKey = apiKey;
+        this._sender = sender;
     }
 }

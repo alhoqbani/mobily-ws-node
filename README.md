@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/alhoqbani/mobily-ws-node.svg?token=GcKyqN8fG1uVX7yXGjDS&branch=master)](https://travis-ci.com/alhoqbani/mobily-ws-node)
+
 # Mobily Ws
 A Node.js client to communicate with mobily.ws API
 

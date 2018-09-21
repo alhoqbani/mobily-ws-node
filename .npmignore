@@ -1,5 +1,6 @@
 /.idea/
 /coverage/
+.nyc_output
 /test/
 /src/
 /.editorconfig
@@ -9,3 +10,5 @@
 /.travis.yml
 .DS_Store
 npm-debug.log
+.babelrc
+tsconfig.json
